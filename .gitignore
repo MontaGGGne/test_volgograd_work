@@ -1,0 +1,11 @@
+*.devcontainer
+*.erlang.cookie
+*.cookie
+*.o
+*.env
+*.venv
+*.log
+*.idea
+*.github
+*.vscode
+cloud_env
