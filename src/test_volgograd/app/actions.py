@@ -5,7 +5,10 @@ from django.contrib.auth.models import User, Group, Permission
 from functools import partial
 from objectpack.filters import ColumnFilterEngine, FilterByField
 from .models import Person
+import logging
 
+
+logging.basicConfig(level=logging.INFO, filename="actions.log",filemode="w")
 
 # ContentType
 class ContentTypePack(ObjectPack):
@@ -41,9 +44,9 @@ class PermissionPack(ObjectPack):
 class PersonPack(ObjectPack):
 
     model = Person
-
+    logging.info("Before ModelEditWindow")
     add_window = edit_window = ModelEditWindow.fabricate(model)
-
+    logging.info("After ModelEditWindow")
     add_to_menu = True
 
     columns = [

@@ -8,4 +8,6 @@
 *.idea
 *.github
 *.vscode
+*.pyc
+*.egg-info
 cloud_env
