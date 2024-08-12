@@ -17,8 +17,6 @@ class ContentTypePack(ObjectPack):
     add_to_menu = True
     # add_window = edit_window = ModelEditWindow.fabricate(model=ContentType)
 
-    
-
 # User
 class UserPack(ObjectPack):
     model = User

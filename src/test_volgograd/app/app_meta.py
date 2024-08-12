@@ -16,6 +16,10 @@ def register_actions():
 	"""
 	return controller.packs.extend([
     	PersonPack(),
+		ContentTypePack(),
+		UserPack(),
+		GroupPack(),
+		PermissionPack()
 	])
 
 def register_desktop_menu():
